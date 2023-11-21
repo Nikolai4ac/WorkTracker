@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(28, 51, 184);
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Mont', sans-serif;
+}
+#navButtons {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#signUps {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#signupUsernameHold, #signupPasswordHold {
+    width: 350px;
+    height: 30px;
+    margin: 2px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    font-family: 'Mont', sans-serif;
+    color: rgba(0, 0, 0, 0.692);
+}
+#signupSubmitBtn {
+    margin-top: 25px;
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+}
+#signupSubmitBtn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.295);
+} 
+#headerText {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-family: 'Mont', sans-serif;
+}
+#signupBtn, #signinBtn {
+    width: 135px;
+    height: 30px;
+    padding: 20px;    
+    background-color: rgb(0, 24, 41);
+    list-style-type: none;
+    text-align: center;
+    margin: 15px;
+}
+#signupBtn:hover, #signinBtn:hover {
+    background-color: rgb(0, 24, 41, 0.3);
+    cursor: pointer;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.5s;
+}
+#btns {
+    display: inline-flex;
+}
