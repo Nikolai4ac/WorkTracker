@@ -4,10 +4,13 @@
 <body>
     <form action="/signup", method="post" id="signupForm">
         <div id="signUps">
-            <input type="text" name="username" id="signupUsernameHold" onfocus="this.value=''", value="username"></input>
-            <input type="text" name="password" id="signupPasswordHold" onfocus="this.value=''", value="password"></input>
+            <input type="text" name="username" id="signupUsernameHold" onfocus="this.placeholder=''", placeholder="USERNAME" required></input>
+            <input type="password" name="password" id="signupPasswordHold" onfocus="this.placeholder=''", placeholder="PASSWORD" required></input>
             <button type="submit" id="signupSubmitBtn">SUBMIT</submit>
         </div>
     </form>
+    <% if (typeof errmsg !== "undefined") { %>
+        <p id="errmsg"> <%- errmsg %> </p>
+    <% } %>
 </body>
 </html>
