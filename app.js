@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const {PORT} = require ('./src/config/config'); 
 const indexRouter = require('./src/routes/indexRouter')
-const signupRouter = require('./src/routes/signupRouter')
+const {signupRouter} = require('./src/routes/signupRouter')
 const signinRouter = require('./src/routes/signinRouter');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true, limit: '20mb'}))
