@@ -1,9 +1,12 @@
-const express = require ('express');
+const express = require("express");
 const indexRouter = express.Router();
-indexRouter.get('/', function(req, res) {
-    const defaultMessage = "Welcome! Please select an option.";
-    const successMessage = req.query.message || defaultMessage;
-    res.render('index', {message: successMessage})
-})
-
+const { onUsrSet } = require("./signupRouter");
+indexRouter.get("/", function (req, res) {
+  res.render("index", { message: "Choose an option" });
+});
+indexRouter.get("/success", (req, res) => {
+  onUsrSet((usr) => {
+    res.render("index",{ message: `Hello, ${usr}`})
+  });
+});
 module.exports = indexRouter;
