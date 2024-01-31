@@ -4,7 +4,7 @@ const dataValidation = require("../validations/validateData");
 const { insertUserData } = require("../db/insertData");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
-let onUsrSetCallback = null;
+let onUsrSetCallback = null; 
 signupRouter.get("/signup", function (req, res) {
   res.render("signup");
 });
