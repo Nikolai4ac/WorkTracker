@@ -6,7 +6,7 @@ indexRouter.get("/", function (req, res) {
 });
 indexRouter.get("/success", (req, res) => {
   onUsrSet((usr) => {
-    res.render("index",{ message: `Hello, ${usr}`})
+    return res.render("index", { message: `Hello, ${usr}` });
   });
 });
 module.exports = indexRouter;

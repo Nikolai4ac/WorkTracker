@@ -27,7 +27,7 @@ signupRouter.post("/signup", (req, res) => {
         }
       });
     });
-    res.redirect("/success");
+    return res.redirect("/success");
   } else {
     res.render("signup", { errmsg: msgToDisplay, error: false });
   }
